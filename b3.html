@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+            <link rel="shortcut icon" href="imagens/Designcontest-Casino-Hearts.ico" type="image/x-icon">
+            <title>Teste</title>
+            <link rel="stylesheet" href="C:\Users\vkv19\Downloads\nmr\umMes\Testes\style.css">
+
+    </head>
+    <body>
+        <p class="texto1">1 mês. Um mês que eu namoro a pessoa
+            mais maravilhosa do mundo, eu realmente
+            gosto de você e desculpa por não demonstrar direito, mas eu te amo viu, esse é
+            o primeiro mês de namoro,
+            mas é o primeiro de muitos.</p>
+        <div>
+            <img src="imagens/images-removebg-preview.png" alt="Coração rosa" >
+        </div>
+        <button id="principal">⠀⠀⠀⠀   ⠀⠀⠀⠀⠀</button>
+        <audio id="Iwanna" src="midia/aaaa.mpeg"></audio>
+        <audio id="MakeMine" src="midia/makeMine.mpeg"></audio>
+        <audio id="Serenata" src="midia/Serenata.mpeg"></audio>
+        <audio id="Out" src="midia/m3.mpeg"></audio>
+        <audio id="MaisN" src="midia/maisNinguem.mpeg"></audio>
+        <audio id="Lana" src="midia/lana.mpeg"></audio>
+        <script>
+            const buttonM = document.querySelector('#principal')
+            var texto = document.querySelector(".texto1");
+            var texto2 = document.querySelector(".texto2")
+
+            var audio = document.querySelector('#Iwanna')
+            var audio1 = document.querySelector('#MakeMine')
+            var audio2 = document.querySelector('#Serenata')
+            var audio3 = document.querySelector('#Out')
+            var audio4 = document.querySelector('#MaisN')
+            var audio5 = document.querySelector('#Lana')
+ 
+            buttonM.onclick = function(){
+                setTimeout(function(){
+                    texto.style.backgroundColor = "#E03E3A";
+                    texto.style.color = "#2e382e";
+                    texto.style.boxShadow = "-5px 5px 15px #00000077";;
+                    texto.style.animationName = "opacidade1";
+                    texto.style.animationDuration = "6s";
+                }, 1000);
+
+                setTimeout(function() {
+                    texto2.style.backgroundColor = "#E03E3A";
+                    texto2.style.color = "#2e382e";
+                    texto2.style.boxShadow = "-5px 5px 15px #00000077";;
+                    texto2.style.animationName = "textoMenor";
+                    texto2.style.animationDuration = "7s";
+                }, 6000);
+                
+                audio.play();
+                setTimeout(function() {
+                    audio.pause();
+                    audio1.play();
+                    setTimeout(function(){
+                        audio1.pause();
+                        audio2.play();
+                        setTimeout(function(){
+                            audio2.pause();
+                            audio3.play();
+                            setTimeout(function(){
+                                audio3.pause();
+                                audio4.play();
+                                setTimeout(function(){
+                                    audio4.pause();
+                                    audio5.play();
+                                }, 167000)
+                            }, 189000)
+                        }, 164000)
+                    }, 231000)
+                 }, 183000);
+            }
+
+        </script>
+        <p class="texto2">Então Beatriz, "sua estranha do karalho, eu meio que estou in love with you"</p>
+        <script>
+            var texto2 = document.querySelector(".texto2")
+        </script>
+    </body>
+</html>
